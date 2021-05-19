@@ -78,6 +78,8 @@ export default {
 		input: config.server.input(),
 		output: config.server.output(),
 		plugins: [
+            externals(),
+            json(),
 			replace({
 				'process.browser': false,
 				'process.env.NODE_ENV': JSON.stringify(mode)
