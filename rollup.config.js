@@ -9,6 +9,9 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import sveltePreprocess from 'svelte-preprocess';
 
+import externals from "rollup-plugin-node-externals";
+import json from "@rollup/plugin-json";
+
 import pkg from './package.json';
 
 const mode = process.env.NODE_ENV;

@@ -27,7 +27,7 @@ import { SapperOIDCClient } from "sapper-oidc/lib/server";
     callbackPath: "/cb", // The route of the callback
     silentCallbackPath: "/silentcb", // (OPTIONAL) The route of the silent callback, adds this line only if you have added 'silentRedirectURI' and as I already said, the paths MUST match.
     scope: "openid profile offline_access", // You must have at least openid and offline_access
-    redisURL: "", // The URL of the Redis server. Format: [redis[s]:]//[[user][:password@]][host][:port][/db-number][?db=db-number[&password=bar[&option=value]]] (More info avaliable at IANA).
+    // redisURL: "", // The URL of the Redis server. Format: [redis[s]:]//[[user][:password@]][host][:port][/db-number][?db=db-number[&password=bar[&option=value]]] (More info avaliable at IANA).
     // It default to: 127.0.0.1:6379 with no password
   };
   const client = new SapperOIDCClient(options);
